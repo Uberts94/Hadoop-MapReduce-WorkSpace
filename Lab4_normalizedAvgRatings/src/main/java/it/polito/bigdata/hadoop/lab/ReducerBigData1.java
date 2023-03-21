@@ -27,9 +27,12 @@ class ReducerBigData1 extends Reducer<
         Iterable<RatingWritable> values, // Input value type
         Context context) throws IOException, InterruptedException {
     	
+    	//assuming a small list of ratings
     	HashMap<String, Double> map = new HashMap<String, Double>(); //HashMap<ProductId,Score>
     	sum = 0;
     	ratingsCounter = 0;
+    	
+    	int test;
     	
     	for(RatingWritable value : values) {
     		sum+=value.getScore();
