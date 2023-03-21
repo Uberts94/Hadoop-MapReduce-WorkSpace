@@ -32,8 +32,6 @@ class ReducerBigData1 extends Reducer<
     	sum = 0;
     	ratingsCounter = 0;
     	
-    	int test;
-    	
     	for(RatingWritable value : values) {
     		sum+=value.getScore();
     		ratingsCounter++;
